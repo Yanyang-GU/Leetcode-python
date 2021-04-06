@@ -1,5 +1,5 @@
 # Leetcode-python
-Leetcode python3 solution
+Leetcode python3 solution. It follows the structure that is organized in [Leetcode codebook](https://books.halfrost.com/leetcode/)
 01. Array
 02. String
 03. Two Pointers
