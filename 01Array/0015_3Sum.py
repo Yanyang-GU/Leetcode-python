@@ -19,22 +19,8 @@ Input: nums = [0]
 Output: []
 '''
 #
-
-# Initial trial O(n^3)
-class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
-        result = []
-        for i in range(len(nums)):
-            for j in range(len(nums)):
-                for k in range(len(nums)):
-                    tri = [nums[i],nums[j],nums[k]]
-                    tri.sort()
-                    if i!=j and i!=k and j!=k and nums[i]+nums[j]+nums[k]==0 and tri not in result:
-                        result.append(tri)
         
-        return result
-        
-# O(n^2)
+# O(n^2)  -> Two-poniter problem left++ and right--
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
@@ -79,4 +65,18 @@ class Solution:
                     l+=1
                 else:
                     r-=1
+        return result
+
+# Initial trial O(n^3)
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        result = []
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                for k in range(len(nums)):
+                    tri = [nums[i],nums[j],nums[k]]
+                    tri.sort()
+                    if i!=j and i!=k and j!=k and nums[i]+nums[j]+nums[k]==0 and tri not in result:
+                        result.append(tri)
+        
         return result
