@@ -25,7 +25,7 @@ Input: height = [1,2,1]
 Output: 2
 '''
 
-#O(n)
+# O(n) -> Two-pointer problem left++ and right--
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         start, end, maxA = 0, len(height)-1, 0
