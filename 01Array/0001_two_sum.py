@@ -14,7 +14,7 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 '''
-## O(n) time complexity
+## O(n) time complexity -> transfer sum into {sum-nums[i] in nums} problem 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         n = len(nums)
