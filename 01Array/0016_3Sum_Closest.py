@@ -9,7 +9,7 @@ Output: 2
 Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 '''
 
-# O(n^2)
+# O(n^2) -> Two-pointer problem left++ and right--
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         nums.sort()
