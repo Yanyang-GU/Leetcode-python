@@ -24,7 +24,10 @@ Example 4:
 Input: nums = [1]
 Output: [1]
 '''
-
+# 13(<-pivot)[54(<-swap)32]: 
+# 1. from right to left find the first non ascending pivot number; 
+# 2. find the fist number that is greater than pivot in the [bracket], and swap
+# 3. sort the [bracket]
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
         """
