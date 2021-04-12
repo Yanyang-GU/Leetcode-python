@@ -1,10 +1,10 @@
 # Leetcode-python
 Leetcode python3 solution. It follows the structure that is organized in [Leetcode codebook](https://books.halfrost.com/leetcode/)
 01. Array
-  * a+b sum problem -> b=sum-a to reduce time complexity
-  * two pointer problem -> 11-18
-  * manipulate array -> 26,27
-  * binary search -> 31-35
+    * a+b sum problem -> b=sum-a to reduce time complexity
+    * two pointer problem -> 11-18
+    * manipulate array -> 26,27
+    * binary search -> 31-35
 3. String
 4. Two Pointers
 5. Linked List
